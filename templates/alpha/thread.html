@@ -6,6 +6,7 @@
 
   <link rel="stylesheet" href="{% static 'alpha/semantic/semantic.min.css' %}">
   <link rel="stylesheet" href="{% static 'alpha/css/index.css' %}">
+  <link rel="stylesheet" href="{% static 'alpha/css/thread.css' %}">
 
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -29,6 +30,8 @@
       </a>
     </div>
   </div>
+
+
   <div id="content-section">
     <div class="ui grid"> 
       <div class="eleven wide column">
@@ -40,11 +43,215 @@
             <p>Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id. Mei ut facer dolores adolescens, no illum aperiri quo, usu odio brute at. Qui te porro electram, ea dico facete utroque quo. Populo quodsi te eam, wisi everti eos ex, eum elitr altera utamur at. Quodsi convenire mnesarchum eu per, quas minimum postulant per id.</p>
           </div>
         </div>
+
+        <div class="time-section">
+          <div class="ui grid three column centered">
+            
+            <div class="column" style="text-align:center;">
+              <div class="ui statistic">
+                <div class="value">
+                  40,509
+                </div>
+                <div class="label">
+                 페이지 뷰
+                </div>  
+              </div>
+            </div>
+            
+            <div class="column"  style="text-align:center;">
+              <div class="ui statistic">
+                <div class="value">
+                  10,509
+                </div>
+                <div class="label">
+                 좋아요
+                </div>  
+              </div>
+            </div>
+            
+            <div class="column" style="text-align:center;">
+              <div class="ui statistic">
+                <div class="value">
+                  499
+                </div>
+                <div class="label">
+                 댓글 수 
+                </div>  
+              </div>
+            </div>
+            
+
+
+          </div>
+
+
+        </div>
+
+        <div class="reply-section">
+          <div class="ui threaded comments">
+            <h3 class="ui dividing header">Comments</h3>
+            <div class="comment">
+              <a class="avatar">
+                <img src="{% static 'alpha/img/mark.jpg' %}">
+              </a>
+              <div class="content">
+                <a class="author">Matt</a>
+                <div class="metadata">
+                  <span class="date">Today at 5:42PM</span>
+                </div>
+                <div class="text">
+                  How artistic!
+                </div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="{% static 'alpha/img/bill.jpg' %}">
+              </a>
+              <div class="content">
+                <a class="author">Elliot Fu</a>
+                <div class="metadata">
+                  <span class="date">Yesterday at 12:30AM</span>
+                </div>
+                <div class="text">
+                  <p>This has been very useful for my research. Thanks as well!</p>
+                </div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+              <div class="comments">
+                <div class="comment">
+                  <a class="avatar">
+                    <img src="{% static 'alpha/img/mark.jpg' %}">
+                  </a>
+                  <div class="content">
+                    <a class="author">Jenny Hess</a>
+                    <div class="metadata">
+                      <span class="date">Just now</span>
+                    </div>
+                    <div class="text">
+                      Elliot you are always so right :)
+                    </div>
+                    <div class="actions">
+                      <a class="reply">Reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment">
+              <a class="avatar">
+                <img src="{% static 'alpha/img/bill.jpg' %}">
+              </a>
+              <div class="content">
+                <a class="author">Joe Henderson</a>
+                <div class="metadata">
+                  <span class="date">5 days ago</span>
+                </div>
+                <div class="text">
+                  Dude, this is awesome. Thanks so much
+                </div>
+                <div class="actions">
+                  <a class="reply">Reply</a>
+                </div>
+              </div>
+            </div>
+            <form class="ui reply form">
+              <div class="field">
+                <textarea></textarea>
+              </div>
+              <div class="ui blue labeled submit icon button">
+                <i class="icon edit"></i> Add Reply
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
+
+
+
       <div class="five wide column">
-        ㅁㄴㅇㅁㄴㅇ
+        <div class="ui card sticky">
+          <div class="image">
+            <img src="{% static 'alpha/img/bill.jpg' %}">
+          </div>
+          <div class="content">
+            <a class="header">William Henry Gates III</a>
+            <div class="meta">
+              <span class="date">1955.10.28</span>
+            </div>
+            <div class="description">
+              안녕하세요, 빌 게이츠입니다.<br>현재 빌앤맬린다 게이츠 재단을<br> 운영하고 있습니다.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="building icon"></i>
+              빌앤맬린다 게이츠 재단
+            </a>
+            <br>
+            <a>
+              <i class="building icon"></i>
+              마이크로소프트
+            </a>
+            <br>
+            <a>
+              <i class="user icon"></i>
+              의장
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="ui mini modal" id="login-modal">
+    <i class="close icon"></i>
+    <div class="header">
+      로그인하기
+    </div>
+    <div class="small content">
+      <!-- <div class="ui medium image">
+        <i class="sign in icon"></i>
+      </div> -->
+      <div class="description">
+        <div class="ui header">로그인하여 더욱 편리하게 이용하세요.</div>
+        <div class="ui form">
+          <div class="field">
+            <label>이메일 주소</label>
+            <input type="text" name="email" placeholder="hoon@youask.com">
+          </div>
+          <div class="field">
+            <label>비밀번호</label>
+            <input type="password" name="password" placeholder="********">
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    
+    <div class="actions">
+      <div class="ui button"><h5 class="ui blue header" style="font-weight:normal;margin:0;padding:0;">계정이 없으신가요?</h5>
+      </div>
+      <div class="ui primary right labeled icon button">
+        로그인하기
+        <i class="checkmark icon"></i>
       </div>
     </div>
   </div>
+
 </body>
 </html>
