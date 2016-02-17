@@ -11,7 +11,10 @@ urlpatterns = {
     #
     # url(r'^alpha/file/upload_file/$', file.UploadFile.as_view()),
     url(r'^$', views.index, name='index'),
-    url(r'^thread/$', views.thread, name='thread')
+    url(r'^thread/$', views.thread, name='thread'),
+    #######
+    url(r'^showmembers/$',views.members_list, name='members'),
+    #######
 }
 
 urlpatterns = format_suffix_patterns(urlpatterns)

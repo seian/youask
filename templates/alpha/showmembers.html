@@ -1,0 +1,16 @@
+<!--DOCTYPE html -->
+<html>
+<body>
+  <h1> MY MEMBERS </h1>
+  {%for obj in object_list %}
+    nicname :
+    {{ obj.nick_name }}<br/>
+    email :
+    {{ obj.email }}<br/>
+    contents :
+    {{ obj.contents }} <br/>
+    <br/>
+  {% endfor %}
+</body>
+
+</html>
